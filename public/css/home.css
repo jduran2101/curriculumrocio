@@ -1,0 +1,347 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import "transition-style";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+   /*Comenta la línea (o dale el valor 'auto' a scroll behavior )
+   para probar la diferencia con y sin scroll suavizado*/
+}
+
+body{
+    font-family:'Montserrat', sans-serif;
+    
+}
+
+
+
+header{
+    position: relative;
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    text-align: center;
+    padding: 25px 0;
+    height: 200px;
+}
+.wave{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+nav {
+    padding-bottom: 15px;
+}
+nav a{
+  text-decoration: none;
+  display: inline-block;
+  color:#fff;
+  margin: 0 30px;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav a:hover{
+    background-color: gray;
+    color: aqua;
+    text-decoration: underline;
+}
+.contenedor-rocio {
+    display : flex;
+    justify-content: center;
+    
+}
+.rocio{
+
+   padding-top: 10px;
+   padding-bottom: 10px;
+   display: flex;
+   justify-content: space-evenly;
+   width: 90%;
+   box-shadow: 0 1px 4px rgba(0, 0, 0, .3),
+              -23px 0 20px -23px rgba(0, 0, 0, .8),
+              23px 0 20px -23px rgba(0, 0, 0, .8),
+              inset 0 0 40px rgba(0, 0, 0, .1);
+}
+.rocio img{
+    width: 30%;
+    border-radius: 50%;
+    
+}
+.rocio .texto{
+    width: 30%;
+    line-height: 1.5;
+}
+span{
+    color: aqua;
+}
+.texto h3 {
+    text-decoration: underline double;
+    text-decoration-color: aqua;
+}
+
+
+.contenedor2{
+    margin: 20px 0;
+    padding: 60px 0;
+    background-image: linear-gradient(rgba(5, 7, 12, 0.55), rgba(5, 7, 12, 0.55)),
+    url(../imges/Copy-of-Unnamed-Design-43.webp);
+    height: 250px;
+    background-size: contain;
+}
+.rociobanner{
+   /* background-image: linear-gradient(rgba(5, 7, 12, 0.55), rgba(5, 7, 12, 0.55)),
+    url(./Copy-of-Unnamed-Design-43.webp);*/
+   /* height: 250px;
+    background-size: contain; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    color:aqua;
+    opacity: 0;
+    transition: .7s;
+}
+.rociobanner:hover{
+    opacity: 1;
+}
+
+.rociobanner p{
+    color: #fff;
+}
+
+.curso1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+
+}
+.curso1 h3{
+    padding: 20px 0;
+    text-decoration: underline double aqua;
+}
+.curso1 ul li{
+    
+    padding: 10px 0 ;
+} 
+.curso1 ul{
+    list-style: none;
+    width: 80%;
+    text-align: center;
+    padding-bottom: 20px ;
+}
+.linea{
+    width: 400px;
+    height: 5px;
+    background-color: aqua;
+    margin-bottom: 10px;
+}
+.contenedor4{
+    padding: 40px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.vista1{
+    width: 25%;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+.vista1 img{
+    width: 100%;
+}
+.vista2{
+    width: 25%;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+.vista2 img{
+    width: 100%;
+}
+
+.contenedor5{
+    padding: 30px 0;
+}
+
+.titulo{
+    border-top: 2px solid #2C5364;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    width: 60%;
+}
+.titulo h3{
+    text-align: center;
+    padding-top: 15px;
+}
+.photos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    
+    
+}
+.photos img{
+    width: 200px;
+    height: 300px;
+    border-radius: 20%;
+    transition: all 300ms;
+}
+.photos img:hover{
+    transform:scale(1.50)
+}
+
+.contenedor3{
+    padding: 60px 0;
+}
+.formulario{
+    width: 100%;
+    max-width: 1100px;
+    margin:auto;
+    display: flex;
+    width: 60%;
+    height: 400px;
+    padding-top: 50px;
+    border-top: 2px solid #2C5364;
+    
+}
+.formulario h2, p{
+    margin-bottom: 15px;
+    color: black
+    
+    
+    
+}
+.contacto{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+.formulario a {
+    color: black;
+    font-size: 17px;
+    text-decoration: none;
+    margin: 15px 0;
+    font-weight: 700;
+}
+.formulario a i{
+    margin-right: 10px;
+    
+}
+.casa {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.casa .campo, textarea {
+    width: 80%;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    
+}
+.casa textarea{
+    width: 80%;
+    height: 200px;
+}
+
+.casa .btn-enviar{
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: rgb(16, 122, 229);
+    color: #fff;
+    border: none;
+}
+
+footer .ultimo{
+    width: 100%;
+    padding: 30px 30px 20px;
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.ultimo h3{
+    font-size: 20px;
+    text-align: center;
+    color: whitesmoke;
+    padding-bottom: 15px;
+}
+.social {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    border-top: #fff 2px solid;
+}
+.social a{
+    padding: 20px 20px;
+    text-decoration: none;
+    background-color: #fff;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+@media (max-width: 800px){
+
+    header{
+        
+        height: 230px;
+    }
+
+    .rocio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rocio img{
+        width: 40%;
+    }
+    .rocio .texto{
+        padding-top: 15px;
+        width: 50%;
+    }
+    .rociobanner{
+        text-align: center;
+    }
+    .formulario{
+        width: 80%;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contacto{
+        width: 70%;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    .contacto h1{
+        padding-bottom: 10px;
+    }
+    .contacto a {
+        margin: 5px 0 ;
+    }
+    .contacto p{
+        display: none;
+    }
+    .casa{
+        width: 90%;
+    }
+    .casa .campo{
+        width: 90%;
+    }
+    .casa textarea{
+        width: 90%;
+    }
+}
