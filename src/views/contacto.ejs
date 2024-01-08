@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/contacto.css">
+    <script src="https://kit.fontawesome.com/9396bdc138.js" crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Contacto</title>
+</head>
+<body>
+    <section class="banner2">
+        <%- include('partials/header')  %>
+        
+        <h3 class="animate__animated animate__backInDown">AGENDA TU CITA...</h3>
+        <p class="animate__animated animate__backInDown">No pierdas tiempo</p>
+        <p class="animate__animated animate__backInDown">La vida comienza con un cuaderno en blanco, tu eliges el dibujo</p>
+
+    </section>    
+    <section class="content">   
+        <div class="coordina">
+            
+                <div class="icon">
+                   <i class="fa-regular fa-calendar fa-2x"></i>
+                    <p>Coordina tu primer sesion por WhatsApp</p> 
+                </div>
+
+                <div class="icon">
+                    <i class="fa-solid fa-hourglass fa-2x"></i>
+                    <p>Libertad, Flexibilidad Horaria, Privacidad </p>
+                </div>
+                <div class="icon">
+                    <i class="fa-solid fa-laptop fa-2x"></i>
+                    <p>Modalidad Online</p>
+                </div>
+                
+                <div class="icon">
+                    <i class="fa-solid fa-stopwatch fa-2x"></i>
+                    <p>Duracion de cada sesion 45min
+                </div>
+                <div class="icon">
+                    <i class="fa-regular fa-credit-card fa-2x"></i>
+                    <p>Pago por Transferencia Bancaria 24 horas previas a la sesion coordinada.. </p>
+                </div>
+                <div class="icon">
+                    <i class="fa-regular fa-face-smile fa-2x"></i>
+                    <p>Solo atencion Particular, No Obra Social</p>
+                </div>
+                
+            
+        </div>
+    </section>
+    
+    <section class="contenedor3">
+        <div class="formulario">
+            <div class="contacto" id="contac">
+                <h2>CONTACTAME</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque  perferendis. Quia, obcaecati possimus. Aut vero maiores, sint dolores assumenda voluptatem cupiditate.</p>
+                <a href="#"><i class="fa-solid fa-phone fa-lg" style="color: #7fc7af;"></i>01134742201</a>
+                <a href="#"><i class="fa-solid fa-paper-plane fa-lg" style="color: #7fc7af;"></i>yoovida@gmail.com</a>
+                <a href="#"><i class="fa-solid fa-map-location-dot fa-lg" style="color:#7fc7af"></i>AVELLANEDA</a> 
+            </div>
+            <form class="casa">
+                <input type="text" name="nombre" class="campo" placeholder="Ingresa tu Nombre">
+                <input type="email" name="email" class="campo" placeholder="Ingresa tu Correo">
+                <textarea name="mensaje" placeholder="Mensaje"></textarea>
+                <input type="submit" name="enviar" value="Enviar" class="btn-enviar">
+            </form>
+        </div>
+
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.7770235470193!2d-58.34462092564856!3d-34.68557666182349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3331df5c309dd%3A0x407297b6c4923c44!2sDEB%2C%20Pergamino%2027%2C%20B1872%20Sarand%C3%AD%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1700492032139!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+   <%- include('partials/footer')  %>
+
+</body>
+</html>

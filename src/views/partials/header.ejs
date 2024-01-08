@@ -1,0 +1,36 @@
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/header.css">
+    <script src="https://kit.fontawesome.com/9396bdc138.js" crossorigin="anonymous"></script>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <title>ROCIO</title>
+   
+</head>
+
+<header>
+    <div class="color"></div>
+    <div class="primero">
+        <img src="/imges/PsicoVidaLogo3b.png" alt="">
+        <nav>
+            <a href="/">Home</a>
+            <a href="/miperfil">Perfil Profesional</a>
+            <a href="/servicios">Areas de Terapia</a>
+            <a href="/contacto">Contacto</a>
+        </nav>    
+        <input type="checkbox" id="chek">
+        <label class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+    </div>
+
+    <script>
+        const chek = document.querySelector('.checkbtn')
+        const visi = document.querySelector('nav')
+        chek.addEventListener('click', ()=> {
+            visi.classList.toggle('nav-visible')
+        })
+    </script>
+</header>
