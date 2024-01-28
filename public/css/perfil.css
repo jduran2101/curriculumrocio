@@ -185,11 +185,31 @@
 }    
 
 @media (max-width: 870px){
+    .perfil h3 {
+        font-size: 25px;
+        padding-left: 25px;
+    }
+    .formacion {
+        width: 380px;
+        margin: auto;
+    }
     .formacion h3 {
-        text-align: start;
-        padding-left: 120px;
+        padding-left: 10px;
+        text-align: center;
+        font-size: 25px;
+        
+    }
+    .info {
+        width: 380px;
+    }
+    .info .btn-contact {
+        margin-right: 150px;
+        margin-bottom: 20px;
     }
     .formacion2 .cursos {
-        width: 500px;
+        width: 380px;
+    }
+    .formacion2 .cursos h4 {
+        font-size: 25px;
     }
 }

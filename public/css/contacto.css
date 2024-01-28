@@ -10,10 +10,10 @@
 }
 .banner2 {
     padding-top: 200px;
-    width: 100%;
+    
     background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.2)),
     url(../imges/copy-space-paper-brain-with-light-bulb.jpg);
-    height: 500px;
+    height: 450px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -180,6 +180,15 @@
 }
 
 @media (max-width: 870px){
+    .banner2 {
+        background-attachment: scroll;
+    }
+    .banner2 h3 {
+        font-size: 30px;
+    }
+    .banner2 p {
+        font-size: 18px;
+    }
     .formulario {
         max-width: 1100px;
         display: flex;
@@ -187,18 +196,26 @@
         align-items: center;
         height: auto;
     }
-    .contacto {
-        width: 500px;
-        margin-bottom: 30px;
+    .coordina {
+        gap: 0;
     }
-    .casa {
-        width: 500px;
-        
-    }
+   
+    
     .casa .campo {
         width: 100%;
     }
     .casa textarea {
         width: 100%;
+    }
+    .formulario .contacto {
+        width: 380px;
+        margin-bottom: 30px;
+        padding-left: 10px;
+    }
+    .formulario .casa {
+        width: 380px;
+    }
+    .mapa iframe {
+        width: 380px;
     }
 }
