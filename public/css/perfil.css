@@ -38,16 +38,16 @@
 }
 
 .perfil1 img {
-    width: 400px;
-    height: 430px;
-    border-radius: 10px;
+    width: 380px;
+    height: 480px;
+    /*border-radius: 10px;
     border-radius: 59% 41% 77% 23% / 33% 36% 64% 67% ;
     background-color: #7fc7af;
-    transition: border-radius 500ms ease-in-out;
+    transition: border-radius 500ms ease-in-out;*/
     /*filter: drop-shadow(16px 7px 8px #7fc7af);*/
 }
 .perfil1 img:hover {
-    border-radius: 34% 66% 42% 58% / 71% 63% 37% 29%  ;
+    /*border-radius: 34% 66% 42% 58% / 71% 63% 37% 29%  ;*/
 }
 .info {
     padding-top: 20px;
