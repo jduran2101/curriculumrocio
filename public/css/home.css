@@ -292,7 +292,10 @@ body{
         flex-direction: column-reverse;
     }
     .vista1 {
+        margin: auto;
         margin-top: 0;
+        width: 370px;
+        height: 390px;
     }
     .info2 {
         margin-top: 40px;
