@@ -50,11 +50,11 @@ body{
 }
     
     
-.rociobanner h2 {
+.rociobanner h1 {
     padding-bottom: 16px;
-    text-decoration: underline;
+    /*text-decoration: underline;
     text-decoration-color: #7fc7af;
-    text-decoration-thickness: 3px ;
+    text-decoration-thickness: 3px ;*/
     font-size: 40px;
     letter-spacing: 3px;
     color: #fff;
@@ -192,6 +192,10 @@ body{
     text-decoration: underline;
     text-decoration-color:#7fc7af ;
     text-decoration-thickness:3px ;
+}
+.vista2 h2 {
+    color: #424444;
+    font-weight: 500;
 }
     
 .vista2 button {

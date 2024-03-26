@@ -12,8 +12,9 @@
     margin-bottom: 90px;
     
 }
-.principal h3 {
+.principal h1 {
     font-size: 35px;
+    color: #424444;
     font-weight: 400;
     text-align: center;
     text-decoration: underline;
@@ -88,7 +89,8 @@
     transform: translateY(0px);
 }
 .area .descripcion p  {
-    font-size: 16px;
+    font-size: 17px;
+    font-weight: bold;
     margin-top: 8px;
     margin-bottom: 20px;
     
