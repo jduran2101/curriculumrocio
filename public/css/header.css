@@ -71,12 +71,13 @@ nav a{
   font-weight: 400;
   font-size: 15px;
   text-transform: uppercase;
-  transition: .5s;
+  transition: .5s ease-in;
 }
 
 nav a:hover{
     color: #7fc7af;
     font-weight: 800;
+    outline: 1px solid #7fc7af;
     
 }
 .whatsapp {
@@ -97,7 +98,7 @@ nav a:hover{
 
 
     
-}
+
     
    
     
@@ -160,6 +161,11 @@ span{
         font-size: 20px;
         padding-top: 15px;
         font-weight: 600;
+        transition: .5s ease-out;
+    }
+    nav a:hover {
+        color: #fff;
+        border-bottom: 2px solid #fff;
     }
     .nav-visible{
         left: 0;

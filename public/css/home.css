@@ -39,7 +39,7 @@ body{
    /* height: 250px;
     background-size: contain; */
     height: 120px;
-    padding-top: 105px;
+    padding-top: 185px;
     padding-bottom: 100px;
     display: flex;
     flex-direction: column;
@@ -51,6 +51,7 @@ body{
     
     
 .rociobanner h1 {
+    
     padding-bottom: 16px;
     /*text-decoration: underline;
     text-decoration-color: #7fc7af;
@@ -64,6 +65,9 @@ body{
     font-size: 28px;
     font-weight: 400;
 }
+.rociobanner .mobile {
+    display: none;
+}
     
 
 
@@ -75,8 +79,10 @@ body{
     justify-content: space-between;
     align-items: center;
     margin: auto;
-
+    
 }
+
+
 .cursos  h2 {
     text-align: center;
     font-size: 30px;
@@ -110,15 +116,20 @@ body{
 
 .curso1{
     margin-bottom: 30px;
+    border-radius: 10px;
     background-color: #f0f5f3;
     height: 450px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 350px;
+    width:  350px;
     transition: .5s;
+    animation: mov linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 50%;
 }
+    
 .curso1:hover {
     box-shadow: 7px 7px 12px #7fc7af, -7px -7px 12px #7fc7af ;
 }    
@@ -127,9 +138,28 @@ body{
 .curso1 img {
     width: 310px;
     height: 250px;
-    
     padding: 10px;
 }
+    
+    
+@keyframes mov {
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+
+
+
+
+
+
+
 .curso1 h3 {
     padding-top: 15px;
     padding-bottom: 20px;
@@ -161,6 +191,7 @@ body{
     width: 410px;
     height: 470px;
     border-radius: 10px;
+    mask-image: linear-gradient(rgb(21, 21, 16) 85%, transparent);
 }
     
 .vista1 img{
@@ -169,11 +200,13 @@ body{
     object-fit: cover;
     transition: all 0.5s ease-in-out;
     cursor: pointer;
+    filter: grayscale(100%);
 }
     
 .vista1 img:hover{
     width: 250px;
     transform: scale(1.1);
+    filter: none;
     /*filter: grayscale(100%);*/
 }
     
@@ -266,16 +299,23 @@ body{
 @media (max-width: 870px){
     .contenedor2 {
         width: 100%;
-        height: 500px;
+        height: 450px;
+        background-attachment: scroll;
+        
     }
     .rociobanner {
         padding-left: 30px;
     }
-    .rociobanner h2 {
-        font-size: 25px;
+    .rociobanner h1 {
+        font-size: 28px;
         
     }
     .rociobanner p {
+        font-size: 18px;
+        display: none;
+    }
+    .rociobanner .mobile {
+        display: block;
         font-size: 18px;
     }
     .cursos h2 {

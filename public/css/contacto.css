@@ -119,14 +119,15 @@
 }
 .formulario h2 {
     margin-bottom: 15px;
-    color: #242424;
+    color: rgb(142, 139, 139);
     font-size: 30px;
     text-decoration: underline;
     text-decoration-color:#7fc7af ;
     text-decoration-thickness:3px ;
 }
 .formulario p {
-    color: #242424;
+    color: rgb(142, 139, 139);
+    font-weight: 600;
 }
     
     
@@ -138,11 +139,11 @@
     flex-direction: column;
 }
 .formulario a {
-    color: #242424;
+    color: rgb(142, 139, 139);
     font-size: 17px;
     text-decoration: none;
     margin: 15px 0;
-    font-weight: 700;
+    font-weight: bold;
 }
 .formulario a i{
     margin-right: 10px;
